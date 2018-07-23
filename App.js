@@ -8,11 +8,6 @@
 
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
-import SplashScreen from './src/screens/SplashScreen';
-import MessagesScreen from './src/screens/MessagesScreen';
-import ActiveScreen from './src/screens/ActiveScreen';
-import { HomeTabNavigation } from './src/navigation/HomeTabNavigation';
-import { BottomTabNavigation } from './src/navigation/BottomTabNavigation';
 import MessengerApp from './src/navigation/MessengerApp';
 
 const instructions = Platform.select({

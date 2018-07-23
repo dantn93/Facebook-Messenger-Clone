@@ -5,15 +5,17 @@ import PropTypes from 'prop-types'
 
 export default class TabIcon extends Component {
     render() {
-        const {name} = this.props;
+        const {name, tintColor} = this.props;
         return (
             <Icon 
                 name={name}
                 size={30}
+                color={tintColor}
             />
         );
     }
 }
 TabIcon.propTypes = {
-    name: PropTypes.string
+    name: PropTypes.string,
+    tintColor: PropTypes.string
 }

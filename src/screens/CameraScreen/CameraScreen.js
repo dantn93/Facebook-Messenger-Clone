@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {View, Text, StyleSheet} from 'react-native';
-import { BottomScreenStyles } from '../config/styles'
+import { BottomScreenStyles } from '@config/styles'
 
 export default class CameraScreen extends Component {
     state = {  }

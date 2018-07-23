@@ -2,31 +2,31 @@ import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 import {createBottomTabNavigator} from 'react-navigation';
 import {HomeTabNavigation} from './HomeTabNavigation';
-import PeopleScreen from '../screens/PeopleScreen';
+import PeopleScreen from '../screens/PeopleScreen/PeopleScreen';
 import TabIcon from '../components/TabIcon';
-import CameraScreen from '../screens/CameraScreen';
-import GamesScreen from '../screens/GamesScreen';
-import PopularScreen from '../screens/PopularScreen';
+import CameraScreen from '../screens/CameraScreen/CameraScreen';
+import GamesScreen from '../screens/GamesScreen/GamesScreen';
+import PopularScreen from '../screens/PopularScreen/PopularScreen';
 
 
-const HomeTabIcon = () => (
-    <TabIcon name={'home'}/>
+const HomeTabIcon = ({ tintColor }) => (
+    <TabIcon name={'home'} tintColor={tintColor}/>
 )
 
-const PeopleTabIcon = () => (
-    <TabIcon name={'supervisor-account'} />
+const PeopleTabIcon = ({ tintColor }) => (
+    <TabIcon name={'supervisor-account'} tintColor={tintColor}/>
 )
 
-const CameraTabIcon = () => (
-    <TabIcon name={'photo-camera'} />
+const CameraTabIcon = ({ tintColor }) => (
+    <TabIcon name={'photo-camera'} tintColor={tintColor}/>
 )
 
-const GamesTabIcon = () => (
-    <TabIcon name={'gamepad'} />
+const GamesTabIcon = ({ tintColor }) => (
+    <TabIcon name={'gamepad'} tintColor={tintColor}/>
 )
 
-const PopularTabIcon = () => (
-    <TabIcon name={'cloud-circle'} />
+const PopularTabIcon = ({ tintColor }) => (
+    <TabIcon name={'cloud-circle'} tintColor={tintColor}/>
 )
 export const BottomTabNavigation = createBottomTabNavigator(
     {
