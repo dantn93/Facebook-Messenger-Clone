@@ -43,7 +43,7 @@ export const BottomTabNavigation = createBottomTabNavigator(
             }
         },
 
-        CameraScreen: {
+        CameraTabScreen: {
             screen: CameraScreen,
             navigationOptions: ({navigation}) => ({
                 header: null,

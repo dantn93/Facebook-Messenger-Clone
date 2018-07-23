@@ -6,9 +6,17 @@ export default class CameraScreen extends Component {
     state = {  }
     render() {
         return (
-            <View style={BottomScreenStyles.container}>
-                <Text>CameraScreen</Text>
+            <View style={[BottomScreenStyles.container, styles.container]}>
+                <Text>Camera Screen</Text>
             </View>
         );
     }
 }
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center'
+    }
+});
