@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { View, Text } from 'react-native';
 import {createBottomTabNavigator} from 'react-navigation';
 import {HomeTabNavigation} from './HomeTabNavigation';
 import PeopleScreen from '../screens/PeopleScreen';

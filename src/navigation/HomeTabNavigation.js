@@ -38,7 +38,7 @@ export const HomeTabNavigation = createMaterialTopTabNavigator(
             },
             style: {
                 backgroundColor: 'white',
-                marginTop: 30
+                // paddingTop: 30
             }
         }
     });

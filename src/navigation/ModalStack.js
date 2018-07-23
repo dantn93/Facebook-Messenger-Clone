@@ -1,23 +1,25 @@
+import React, { Component } from 'react';
+import { View, Text } from 'react-native';
 import {createStackNavigator} from 'react-navigation';
-import { BottomTabNavigation } from './BottomTabNavigation';
 import CameraScreen from '../screens/CameraScreen';
-import SplashScreen from '../screens/SplashScreen';
+import { SearchStack } from './SearchStack';
+import { SearchHeader } from '../components/SearchHeader/SearchHeader';
 
 export const ModalStack = createStackNavigator(
     {
-        MainScreen: {
-            screen: BottomTabNavigation,
-            navigationOptions: {
-                gesturesEnabled: false
-            }
+        SearchStack: {
+            screen: SearchStack,
+            navigationOptions: ({navigation}) => ({
+                gesturesEnabled: false,
+                header: <SearchHeader navigation={navigation}/>
+            })
         },
         CameraScreen: {
             screen: CameraScreen,
             navigationOptions: {gesturesEnable: false}
-        }        
+        }
     },
     {
-        model: 'modal',
-        headerMode: 'none'
+        model: 'modal'
     }
 );

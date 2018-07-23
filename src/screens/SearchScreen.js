@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import {View, Text} from 'react-native';
 
-export default class SplashScreen extends Component {
+export default class SearchScreen extends Component {
     state = {  }
     render() {
         return (
             <View>
-                <Text>Splash Screen</Text>
+                <Text>Search Screen</Text>
             </View>
         );
     }
