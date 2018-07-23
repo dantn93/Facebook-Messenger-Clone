@@ -13,7 +13,7 @@ import MessagesScreen from './src/screens/MessagesScreen';
 import ActiveScreen from './src/screens/ActiveScreen';
 import { HomeTabNavigation } from './src/navigation/HomeTabNavigation';
 import { BottomTabNavigation } from './src/navigation/BottomTabNavigation';
-import MessengerApp from './src/navigation/ModalStack';
+import MessengerApp from './src/navigation/MessengerApp';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',

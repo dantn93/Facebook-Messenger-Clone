@@ -6,7 +6,7 @@
 	<dict>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<data>
-		GZ8KFTQToXtw7EE3dftND6bNRS4=
+		/AlPFNwPRTRQNT5q7v1QciKpNTs=
 		</data>
 		<key>Entypo.ttf</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		r1AaIVgx4J+/r/QClYIvciTJqt4=
+		ZXrobjsuXtqdixdNBVg5Inje2Lc=
 		</data>
 		<key>Ionicons.ttf</key>
 		<data>
@@ -65,13 +65,21 @@
 	<dict>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			/AlPFNwPRTRQNT5q7v1QciKpNTs=
+			</data>
 			<key>hash2</key>
 			<data>
-			4NtX+vmERO+d6hO2m5y1sz48A70Xb5BZxTPrEodm+hw=
+			tCEzkjggKKmyBZAno1h0ij3GDqPvCWSMPJ/Y9JQ5O68=
 			</data>
 		</dict>
 		<key>Entypo.ttf</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			R4cKZ91Qhxdl95nKqX2ochnuR8U=
+			</data>
 			<key>hash2</key>
 			<data>
 			3QhJoVkfiNp5N7I/kiQYpc7FTgdeCePMyo/rYgFvqoI=
@@ -79,6 +87,10 @@
 		</dict>
 		<key>EvilIcons.ttf</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			QZrcvnS7qREj2zspB3XjYvIS8+U=
+			</data>
 			<key>hash2</key>
 			<data>
 			J9GohnZmGjoiaVdpUtb3ANoFZEvAMFUR3iO3D3HKVDY=
@@ -86,6 +98,10 @@
 		</dict>
 		<key>Feather.ttf</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			AiHzjp4t0CEzVCcxbr7QXuznQyM=
+			</data>
 			<key>hash2</key>
 			<data>
 			sse5lKY8HPl6gBWzGq4njD9mmOqvSOduEWdc+dNdrHY=
@@ -93,6 +109,10 @@
 		</dict>
 		<key>FontAwesome.ttf</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			E7HqtlqYPHpzvHmXxHnWaUP3xss=
+			</data>
 			<key>hash2</key>
 			<data>
 			qljzPyOaD7AvXHpsRcBD16msmgkzNYBmlOzW1O3A1qg=
@@ -100,6 +120,10 @@
 		</dict>
 		<key>Foundation.ttf</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			SyvObHkkk6SlcWtv7C2+/olJLD8=
+			</data>
 			<key>hash2</key>
 			<data>
 			fh3QPdTOkLZYBSVUzXRZ3xZxZxc4mlUvpMbVal+JM+Y=
@@ -107,6 +131,10 @@
 		</dict>
 		<key>Ionicons.ttf</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			D3lWcE/mG0nEHqGiIFEkD3AKK0Q=
+			</data>
 			<key>hash2</key>
 			<data>
 			u0dnmwuuuEgbf1HGitM65aUmc2y1CxcXzGD/a2X5CKM=
@@ -114,6 +142,10 @@
 		</dict>
 		<key>MaterialCommunityIcons.ttf</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			LlRFFQPKQ8n7uDUD5LZhbhx4DRE=
+			</data>
 			<key>hash2</key>
 			<data>
 			hvzI5Ll2LOfABnIPjqOG8YBKGtVVv2xJ+8XfCHVI35c=
@@ -121,6 +153,10 @@
 		</dict>
 		<key>MaterialIcons.ttf</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			/AXeMSNOAJD33cKM4bI69AJssdo=
+			</data>
 			<key>hash2</key>
 			<data>
 			t/Sjq1YgSPKN0fppFgG8QzY6YdD4dtFtgxbFLk8y1pY=
@@ -128,6 +164,10 @@
 		</dict>
 		<key>Octicons.ttf</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			+YreAPYbFuBieFv6gKSQafXjk7M=
+			</data>
 			<key>hash2</key>
 			<data>
 			NC9CWcIUkNdDyFv9XLIgM5voHcU7RU+sU2mnqmpBMI4=
@@ -135,6 +175,10 @@
 		</dict>
 		<key>SimpleLineIcons.ttf</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			n/uBpaEREuKS8swyPphIa61ZdZk=
+			</data>
 			<key>hash2</key>
 			<data>
 			P1Ad2wXHCCm7tRz+nKn/9X854GBFfCV7PM8l33Z/CHA=
@@ -142,6 +186,10 @@
 		</dict>
 		<key>Zocial.ttf</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			C9pZx7zT05J94EfgkYdaRCi/0as=
+			</data>
 			<key>hash2</key>
 			<data>
 			17EKHr4YMOWi8I9JA7moDiwZEsDdL3O5P88r+DIhZgI=

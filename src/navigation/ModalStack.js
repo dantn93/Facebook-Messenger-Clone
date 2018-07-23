@@ -3,7 +3,7 @@ import { BottomTabNavigation } from './BottomTabNavigation';
 import CameraScreen from '../screens/CameraScreen';
 import SplashScreen from '../screens/SplashScreen';
 
-const ModalStack = createStackNavigator(
+export const ModalStack = createStackNavigator(
     {
         MainScreen: {
             screen: BottomTabNavigation,
@@ -21,20 +21,3 @@ const ModalStack = createStackNavigator(
         headerMode: 'none'
     }
 );
-
-const MessengerApp = createStackNavigator(
-    {
-        MainScreen: {
-            screen: ModalStack,
-            navigationOptions: {
-                gesturesEnable: false, header: null
-            }
-        },
-        SplashScreen: {
-            screen: SplashScreen,
-            navigationOptions: { gesturesEnabled: false, header: null }
-        },
-    }
-)
-
-export default MessengerApp;
