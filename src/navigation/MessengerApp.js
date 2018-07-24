@@ -3,7 +3,19 @@ import {ModalStack} from './ModalStack';
 import ChatScreen from '../screens/ChatScreen/ChatScreen';
 import SplashScreen from '../screens/SplashScreen/SplashScreen';
 
-const MessengerApp = createStackNavigator(
+import {
+    createStore,
+    applyMiddleware,
+    combineReducers,
+  } from 'redux';
+import {
+    reduxifyNavigator,
+    createReactNavigationReduxMiddleware,
+    createNavigationReducer,
+  } from 'react-navigation-redux-helpers';
+import { Provider, connect } from 'react-redux';
+
+export const MessengerApp = createStackNavigator(
     {
         SplashScreen: {
             screen: SplashScreen,
@@ -22,4 +34,15 @@ const MessengerApp = createStackNavigator(
     }
 )
 
-export default MessengerApp;
+const mapStateToProps = (state) => ({
+  state: state.nav,
+});
+
+const middleware = createReactNavigationReduxMiddleware(
+    "root",
+    state => state.nav,
+);
+const App = reduxifyNavigator(MessengerApp, "root");
+const AppWithNavigator = connect(mapStateToProps)(App);
+
+export default AppWithNavigator;

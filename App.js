@@ -8,8 +8,14 @@
 
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
-import MessengerApp from './src/navigation/MessengerApp';
+// import {AppWithNavigationState, store} from './src/navigation/MessengerApp';
+import { Provider, connect } from 'react-redux';
+import MessenderApp from './src/navigation/MessengerApp';
+import { applyMiddleware, createStore } from 'redux';
+import logger from 'redux-logger';
+import {AppReducer} from './src/redux/reduces'
 
+import AppWithNavigator from './src/navigation/MessengerApp';
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
   android:
@@ -17,10 +23,18 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu',
 });
 
+const store = createStore(
+  AppReducer,
+  applyMiddleware(logger)
+)
+
 export default class App extends Component {
   render() {
     return (
-        <MessengerApp />
+      <Provider store={store}>
+        <AppWithNavigator />
+      </Provider>
+      
     );
   }
 }
