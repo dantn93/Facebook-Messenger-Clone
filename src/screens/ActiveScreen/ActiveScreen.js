@@ -30,7 +30,7 @@ class ActiveScreen extends Component {
     listItem(item){
         return (
             <View style={styles.viewItem}>
-                <TouchableOpacity onPress={() => {this.props.dispatch({type: "TEST"})}}>
+                <TouchableOpacity onPress={() => {this.props.dispatch({type: "GOTO_CHAT"})}} style={styles.touchItem}>
                     <Image source={{uri: item.item.picture.thumbnail}} style={styles.avatar}/>
                     <Text style={styles.personname}>{item.item.name.first}</Text>
                     <Image source={require('@assets/images/wave.png')} style={styles.wave}/>
@@ -56,33 +56,28 @@ const styles = StyleSheet.create({
         width: '100%', 
         height: 60, 
         marginBottom: 2,
+        // backgroundColor: 'gray',
+        
     },
     touchItem: {
         flex: 1,
         flexDirection: 'row',
-        width: '100%',
         alignItems: 'center',
-
     },
     avatar: {
         width: 50, 
         height: 50, 
         borderRadius: 25,
-        marginLeft: 10,
-        zIndex: 1,
-        backgroundColor: 'red'
+        marginLeft: 10
     },
     personname: {
         marginLeft: 5
     },
-    touchHand:{
-        position: 'absolute',
-        right: 10,
-    },
     wave: {
         width: 40,
         height: 40,
-        zIndex: 1
+        position: 'absolute',
+        right: 10
     }
 })
 
@@ -90,5 +85,5 @@ const mapStateToProps = state => ({
     nav: state.nav,
   });
   
-  export default connect(mapStateToProps)(ActiveScreen);
+export default connect(mapStateToProps)(ActiveScreen);
 

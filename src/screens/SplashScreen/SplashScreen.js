@@ -26,9 +26,9 @@ class SplashScreen extends Component {
                 <Button raised color="#0084ff" onPress={this.onPress}>
                     CONTINUE AS USER
                 </Button>
-                <Button raised color="red" onPress={() => {this.props.dispatch({type: "TEST"})}}>
+                {/* <Button raised color="red" onPress={() => {this.props.dispatch({type: "TEST"})}}>
                     GO TO CHAT SCREEN
-                </Button>
+                </Button> */}
             </View>
         );
     }

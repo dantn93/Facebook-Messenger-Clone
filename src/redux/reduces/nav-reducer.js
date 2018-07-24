@@ -10,13 +10,19 @@ const initialNavState = MessengerApp.router.getStateForAction(
 
 const navigationReducer = (state = initialNavState, action) => {
     let nextState;
-    if(action.type == 'TEST'){
-        nextState = MessengerApp.router.getStateForAction(
+    switch (action.type) {
+        case 'GOTO_CHAT':
+            nextState = MessengerApp.router.getStateForAction(
             NavigationActions.navigate({ routeName: 'ChatScreen' }),
-            state
-          );
-    }else{
-        nextState = MessengerApp.router.getStateForAction(action, state);
+            state );
+            break;
+        case 'BACK_SCREEN':
+            nextState = MessengerApp.router.getStateForAction(
+            NavigationActions.back(),
+            state );
+            break;
+        default:
+            nextState = MessengerApp.router.getStateForAction(action, state);
     }
     return nextState || state;
 };
